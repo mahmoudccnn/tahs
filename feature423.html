@@ -1,0 +1,129 @@
+
+
+
+
+             
+
+  
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+
+
+
+
+  
+
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .info {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        .toggle-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .toggle-button:hover {
+            background-color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="kl.jfif" alt="Descriptive Image">
+    <button class="toggle-button" id="toggleButton">Show Data</button>
+    <div class="info" id="info">
+        <h1>Data</h1>
+        <p >
+ 
+    
+    
+  
+        
+        
+        
+         
+        
+ 
+
+ 
+ 
+    
+            مركز رادة للتأهيل والتدريب<br>
+            د . مصطفى عبدالمولى<br>
+            01028151430<br>
+            0235199843<br>
+            محافظه الجيزه<br>
+            العنوان ١٢ شارع ش علي بن ابي طالب بولاق الدكرور
+        
+
+ 
+
+        </p>   </div>
+</div>
+
+<script>
+    document.getElementById('toggleButton').onclick = function() {
+        var infoDiv = document.getElementById('info');
+        if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+            infoDiv.style.display = 'block';
+            this.textContent = 'Hide Data';
+        } else {
+            infoDiv.style.display = 'none';
+            this.textContent = 'Show Data';
+        }
+    };
+</script>
+
+</body>
+</html>
+    
+    
+    

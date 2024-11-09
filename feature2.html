@@ -1,0 +1,229 @@
+   
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Features Page</title>
+    <style>
+        .sasa{
+            width: 100px;
+            text-align: center;
+            color: black;
+    background-color: rgb(13, 174, 214);
+    margin: auto;
+    height: 60px;
+    padding: 10px;
+    text-decoration: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #3098c2;
+        }
+        img {
+            max-width: 100%;
+            height: 60vh;
+            margin: 20px 0;
+        }
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature {
+            background-color: #fefeff;
+            color: rgb(55, 15, 235);
+            padding: 15px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .feature:hover {
+            background-color: #c7194d;
+        }
+        @media (min-width: 600px) {
+            .features {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .feature {
+                margin: 10px;
+                flex: 1 1 150px; /* responsive width */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<img src="kl.jfif" alt="Feature Image">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburger Menu</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.line {
+    width: 20px;
+    height: 10px;
+    background-color: #0fc6cc;
+    transition: all 0.3s ease;
+    color: rgb(166, 223, 9);
+}
+.features {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    padding: 10px;
+}
+.feature {
+    color: black;
+    background-color: rgb(13, 174, 214);
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    text-decoration: none;
+}
+.feature:hover {
+    background-color: #e0e0e0;
+}
+.menu-button{
+    color: black;
+    background-color: #ccc;
+}
+.line{
+    color: black;
+    background-color: #3098c2;
+}
+</style>
+</head>
+<body> <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Button Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f7f7f7;
+    }
+    .menu-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40px;
+        height: 30px;
+        padding: 0;
+    }
+    .line {
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+    .features {
+        display: none;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .features.show {
+        display: block;
+    }
+body{
+background-color: #0fc6cc;
+}
+</style>
+</head>
+<body>
+
+<button class="menu-button" onclick="toggleFeatures()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</button>
+
+ 
+
+
+</body>
+</html>
+ 
+
+
+         
+<div class="features">
+    <div class="feature" onclick="openPage('feature211.html')"> giza  </div>
+    <div class="feature" onclick="openPage('feature212.html')"> cairo </div>
+    <div class="feature" onclick="openPage('feature213.html')">  assuit                 </div> 
+</div> 
+
+
+  
+<script>
+function toggleFeatures() {
+    const features = document.getElementById('features');
+    features.style.display = features.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
+
+</body>
+</html>
+
+
+ 
+
+<script>
+    function openPage(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>  
+
+

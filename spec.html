@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image with 15 Buttons</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px; /* Constrains width on larger screens */
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            max-height: 40vh;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons-container {
+            display: grid;
+            gap: 15px;
+            justify-items: center;
+        }
+
+        button {
+            width: 100%;
+            max-width: 200px; /* Limit button size on larger screens */
+            height: 60px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Grid Layout */
+        @media (min-width: 480px) {
+            .buttons-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+            }
+        }
+
+        @media (min-width: 768px) {
+            .buttons-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .buttons-container {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="kl.jfif" alt="Sample Image" class="main-image">
+        
+        <div class="buttons-container">
+            <!-- 14 feature buttons with specified names -->
+            <button onclick="openPage(1)">١_اضطرابات انفعاليه وسلوكيه (تخاطب)</button>
+            <button onclick="openPage(2)">٢_حركي (علاج وظيفي)</button>
+            <button onclick="openPage(3)">٣_صعوبات تعلم</button>
+            <button onclick="openPage(4)">٤_شامل التخصصات (تربيه خاصه)</button>
+            <button onclick="openPage(5)">٥_تكامل حسي</button>
+            <button onclick="openPage(6)">٦_اعاقه عقليه</button>
+            <button onclick="openPage(7)">٧_تعديل سلوك</button>
+            <button onclick="openPage(8)">٨_كمبيوتر</button>
+            <button onclick="openPage(9)">٩_تأهيل حركي</button>
+            <button onclick="openPage(10)">١٠_اطفال زوي احتياجات خاصه او عاديين زوي قدره عقليه عاليه</button>
+            <button onclick="openPage(11)">١١_استشاري امراض وراثيه</button>
+            <button onclick="openPage(12)">١٢_تشخيص متلازمه ارلن</button> 
+            <button onclick="openPage(13)">١٣_اعاقه سمعيه او بصريه     </button>
+ 
+            <button onclick="openPage(14)">١٤_تنميه المهارات</button>
+            <!-- 15th button to return to index.html -->
+            <button onclick="openPage('index.html')">رجوع إلى الصفحة الرئيسية</button>
+        </div>
+    </div>
+
+    <script>
+        function openPage(page) {
+            if (page === 'index.html') {
+                window.location.href = page;
+            } else {
+                const urls = [
+                    "p1.html", "p2.html", "p3.html", "p4.html", "p5.html", 
+                    "p6.html", "p7.html", "p8.html", "p9.html", "p10.html", 
+                    "p11.html", "p12.html", "p13.html", "p14.html"
+                ];
+                window.open(urls[page - 1], "_blank");
+            }
+        }
+    </script>
+</body>
+</html>

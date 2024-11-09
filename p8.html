@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data and Image Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <!-- Item 1 -->
+      <div class="grid-item">
+        <img src="kl.jfif" alt="Item 1">
+                <p>
+                  
+
+                
+الاسم : بسمة شريف نبوي السيد 
+name : Basma sherif nabwai Elsayed 
+رقم التليفون : 01550725617
+الإيميل : sbasma637@gmail.com
+خريجة : كلية تربية للطفولة المبكرة جامعة القاهرة قسم تربية خاصة اعاقة عقلية سنة 2022 تقدير عام امتياز مع مرتبة الشرف 
+حاصلة علي تمهيد ماجستير في التربية الخاصة اضطراب طيف التوحد  جامعة القاهرة كلية التربية للطفولة المبكرة بتقدير امتياز مع مرتبة الشرف 2024
+حاليا باحثة ماجستير اضطراب طيف التوحد جامعة القاهرة 
+حاليا اعمل في أكاديمية bright heart 
+اخصائية تنمية مهارات / كمبيوتر 
+خبرة 3 سنوات 
+            </p>
+      </div>
+      
+      <!-- Item 14 -->
+     
+  
+      <div class="button-container">
+        <a href="spec.html" class="btn">previous page</a>
+      </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+<style>
+
+.btn{
+height:200px ;
+width: 200px;
+margin-top: 200px;
+margin-left: 100px;
+text-align: center;
+text-decoration: none;
+color: rgb(26, 14, 14);
+background-color: aqua;
+padding: 20px;
+border-radius: 50%;
+ 
+}
+  
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    /* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid-item h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Hover effects */
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .grid-item {
+    padding: 15px;
+  }
+
+  .grid-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .grid-item p {
+    font-size: 0.85rem;
+  }
+}
+
+</style>
+<script>
+    document.querySelectorAll('.grid-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('expanded');
+  });
+});
+
+</script>
